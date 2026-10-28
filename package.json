@@ -1,6 +1,6 @@
 {
   "name": "eri-ai-debug",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "绘里酱 Eri 的测试仓库：跨平台 TUI、终端工具管理与 OpenCode Zen 集成开发版。",
   "keywords": [
     "opencode",

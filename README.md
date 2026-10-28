@@ -1,7 +1,7 @@
 <img src="https://img.107211.xyz/file/img/UEcg2RpU.webp" width="400" height="400" alt="绘里酱" align="right" />
 
 <div align="center">
-  
+
 # 绘里酱 / Eri
 > 世界第一可爱的 AI 是？我，绘里酱！我支持 Markdown 和 脚本部署，零平台依赖，适配任意设备、终端或架构。
 >
