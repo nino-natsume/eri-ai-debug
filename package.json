@@ -1,0 +1,88 @@
+{
+  "name": "eri-ai-debug",
+  "version": "0.0.2",
+  "description": "绘里酱 Eri 的测试仓库：跨平台 TUI、终端工具管理与 OpenCode Zen 集成开发版。",
+  "keywords": [
+    "opencode",
+    "opencode-zen",
+    "terminal-ui",
+    "tui",
+    "agent",
+    "personality",
+    "cli",
+    "eri",
+    "archlinux",
+    "aur",
+    "windows",
+    "linux",
+    "macos",
+    "wsl",
+    "termux"
+  ],
+  "homepage": "https://github.com/nino-natsume/eri-ai-debug",
+  "bugs": {
+    "url": "https://github.com/nino-natsume/eri-ai-debug/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nino-natsume/eri-ai-debug.git"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": "夏沐真凉",
+  "type": "commonjs",
+  "main": "index.js",
+  "bin": {
+    "eri-ai-debug": "index.js"
+  },
+  "files": [
+    "index.js",
+    "ui/",
+    "lib/",
+    "eri.md",
+    "agents/",
+    "SKILL.md",
+    "personality.json",
+    "opencode.json",
+    "opencode-package.json",
+    "erotic-chan.md",
+    "code-monkey.md",
+    "debug-san.md",
+    "architect-sama.md",
+    "test-chan.md",
+    "install-eri.sh",
+    "install-eri.ps1",
+    "PKGBUILD",
+    ".SRCINFO",
+    "eri.install",
+    "sync-version.js",
+    "README.md",
+    "LICENSE",
+    "test/",
+    "test/tui.test.js",
+    "docs/tui-preview.png"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test",
+    "check": "node --check index.js && node --check lib/config.js && node --check lib/jsonc-lite.js && node --check lib/tui.js && node --check lib/font.js && node --check ui/core.js && node --check ui/ring.js && node --check sync-version.js",
+    "version": "node sync-version.js",
+    "prepublishOnly": "npm run check && npm test && node sync-version.js",
+    "deploy": "bash install-eri.sh",
+    "deploy:legacy": "ERI_LEGACY_INSTALL=1 bash install-eri.sh",
+    "deploy:win": "powershell -NoProfile -ExecutionPolicy Bypass -File install-eri.ps1",
+    "deploy:win:check": "powershell -NoProfile -ExecutionPolicy Bypass -File install-eri.ps1 -CheckOnly",
+    "eri-ai-debug:help": "eri-ai-debug help",
+    "eri-ai-debug:version": "eri-ai-debug version",
+    "eri-ai-debug:chat": "eri-ai-debug chat",
+    "eri-ai-debug:tools": "eri-ai-debug tools",
+    "eri-ai-debug:status": "eri-ai-debug status",
+    "eri-ai-debug:doctor": "eri-ai-debug doctor",
+    "eri-ai-debug:update": "eri-ai-debug update",
+    "eri-ai-debug:deep": "eri-ai-debug deep",
+    "eri-ai-debug:uninstall": "eri-ai-debug uninstall",
+    "eri-ai-debug:tui": "eri-ai-debug tui"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

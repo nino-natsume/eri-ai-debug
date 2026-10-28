@@ -1,0 +1,12 @@
+post_install() {
+  echo 'eri-ai-debug 测试包已安装。运行 `eri-ai-debug` 打开终端界面，运行 `eri-ai-debug connect` 连接 OpenCode。'
+  echo '默认模型为 opencode/big-pickle；免费额度和可用性由 OpenCode 服务端决定。'
+}
+
+post_upgrade() {
+  echo 'eri-ai-debug 测试包已升级。运行 `eri-ai-debug doctor` 检查环境，运行 `eri-ai-debug` 打开终端界面。'
+}
+
+post_remove() {
+  echo 'eri-ai-debug 测试包已移除。测试程序配置位于 ~/.config/eri-ai-debug；卸载软件包不会自动删除用户配置。'
+}

@@ -1,0 +1,16 @@
+pkgbase = eri-ai-debug
+	pkgdesc = Eri AI debug/test build: cross-platform terminal TUI and multi-CLI persona manager
+	pkgver = 0.0.2
+	pkgrel = 1
+	url = https://github.com/nino-natsume/eri-ai-debug
+	install = eri.install
+	arch = any
+	license = AGPL-3.0-or-later
+	makedepends = git
+	depends = nodejs
+	depends = npm
+	depends = opencode
+	optdepends = bash: 旧版 Shell 安装入口
+	source = eri-ai-debug::git+https://github.com/nino-natsume/eri-ai-debug.git#tag=v0.0.2
+	sha256sums = SKIP
+pkgname = eri-ai-debug

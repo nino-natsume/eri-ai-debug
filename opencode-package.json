@@ -1,0 +1,9 @@
+{
+  "name": "eri-ai-debug-opencode-config",
+  "private": true,
+  "description": "仅在执行 eri-ai-debug deep 时复制到 OpenCode 配置目录的插件依赖清单。",
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.19.0",
+    "opencode-personality": "^1.2.0"
+  }
+}

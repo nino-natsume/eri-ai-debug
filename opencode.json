@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/big-pickle",
+  "plugin": ["opencode-personality"],
+  "skills": { "paths": ["./skill"] },
+  "agent": {
+    "erotic-chan": { "description": "角色风格与成人话题边界内的文案建议。", "mode": "subagent" },
+    "code-monkey": { "description": "代码实现、审查、重构与工程实践。", "mode": "subagent" },
+    "debug-san": { "description": "分析 bug、崩溃、异常与性能问题。", "mode": "subagent" },
+    "architect-sama": { "description": "系统架构、技术选型与模块划分。", "mode": "subagent" },
+    "test-chan": { "description": "测试设计、回归测试与覆盖分析。", "mode": "subagent" }
+  }
+}
